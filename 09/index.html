@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de balada</h1>
+    Digite a sua idade <input type="number" id="idade" placeholder="idade">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">Resposta</div>
+    <script>
+        var resultado = document.getElementById('res')
+        var autorizar = document.getElementById('idade')
+        var idade1 = Number(autorizar.value)
+        
+        function verificar(){
+            if (idade1>= 18) {
+                resultado.innerText('Você esta <strong>AUTORIZADO<strong> a entrar na balada')
+            }
+        }
+    </script>
+</body>
+</html>
