@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com o usuario</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="" id="numero1"> + 
+    <input type="number" name="" id="numero2">
+    <input type="button" value="somar" onclick="somar()">
+    <h3 id="res">Resultado</h3>
+<script>
+    var resultado = document.getElementById("res")
+    function somar(){
+    var n1 = document.getElementById("numero1")
+    var n2 = document.getElementById("numero2")
+    var number1 = Number(n1.value)
+    var number2 = Number(n2.value)
+    var soma = number1 + number2 
+    resultado.innerHTML = `A soma entre os números ${number1} e ${number2} é igual á ${soma} `
+
+    }
+
+</script>
+</body>
+</html>

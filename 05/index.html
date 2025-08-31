@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <button>Clique aqui</button>
+    <br>
+    <button>Segundo botão</button>
+    <p id="bom dia">Mensagem de bom dia</p>
+    <p>Mensagem de boa noite</p>
+
+    <script>
+        var botao = window.document.getElementsByTagName('button')[1]
+        window.document.write(botao.innerText)
+        var bom_dia = document.getElementById("bom dia")
+        bom_dia.style.color = "red"
+    </script>
+</body>
+</html>
